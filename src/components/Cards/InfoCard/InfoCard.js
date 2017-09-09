@@ -3,7 +3,7 @@ import { Card, CardImg, CardText, CardBlock, CardLink,
   CardTitle, CardSubtitle } from 'reactstrap'
 import './InfoCard.css'
 
-const InfoCard = ({ title="", subtitle="", text="" }) => {
+const InfoCard = ({ title="", subtitle="", text="", button=null }) => {
   return (
     <div>
       <Card className="InfoCard">
@@ -13,6 +13,7 @@ const InfoCard = ({ title="", subtitle="", text="" }) => {
         </CardBlock>
         <CardBlock>
           <CardText>{text}</CardText>
+          {button}
         </CardBlock>
       </Card>
     </div>

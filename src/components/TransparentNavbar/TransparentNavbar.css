@@ -1,5 +1,5 @@
 .TransparentNavbar {
-  background-color: transparent;
+  background-color: #fff;
   padding-top: 50px;
   padding-bottom: 20px;
   display: inline-flex;
@@ -7,6 +7,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .TransparentNavbar_title {
@@ -33,6 +38,11 @@
 }
 
 .TransparentNavbar_collapse {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 1;
   width: 100%;
   display: inline-flex;
   padding: 10px;
@@ -55,4 +65,8 @@
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.TransparentNavbar_collapse_list li a:hover {
+  color: grey;
 }

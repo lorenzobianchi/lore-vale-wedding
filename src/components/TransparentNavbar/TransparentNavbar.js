@@ -6,7 +6,7 @@ import './TransparentNavbar.css'
 class TransparentNavbar extends PureComponent {
 
      state = {
-        collapsed: false
+        collapsed: true,
       }
 
     toggleNavbar = () => {
@@ -27,13 +27,14 @@ class TransparentNavbar extends PureComponent {
               <NavbarToggler onClick={this.toggleNavbar}  />
             </div>
           </Navbar>
-          {this.state.collapsed &&
+          {this.state.collapsed ?
+
             <div className="TransparentNavbar_collapse">
               <ul className="TransparentNavbar_collapse_list">
-                <li><NavLink href="/info">Info</NavLink></li>
+                <li><NavLink href="/">Info</NavLink></li>
                 <li><NavLink href="/photos">Photos</NavLink></li>
               </ul>
-            </div>}
+            </div> : null}
         </div>
       );
     }
