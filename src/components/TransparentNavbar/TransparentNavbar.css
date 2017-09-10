@@ -20,13 +20,11 @@
   align-self: center;
 }
 
-.TransparentNavbar_toggler button {
-  border: 0px;
+.TransparentNavbar_toggler  {
   position: fixed;
   left: 15px;
   top: 30px;
   z-index: 2409;
-  color: #333;
   border-color: transparent;
 }
 
@@ -46,7 +44,7 @@
   width: 100%;
   display: inline-flex;
   padding: 10px;
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
 }
 
 .TransparentNavbar_collapse_list {
@@ -69,4 +67,38 @@
 
 .TransparentNavbar_collapse_list li a:hover {
   color: grey;
+}
+
+.colors_btn {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  margin-left: 3px;
+  border-radius: 5px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.colors_btn_text {
+  font-size: 9px;
+  padding-left: 4px;
+  margin: 0px;
+}
+
+@media (max-width: 576px) {
+  .colors_btn {
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+  }
+  .TransparentNavbar_toggler {
+    top: 5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 14px;
+    padding-top: 5px;
+  }
 }

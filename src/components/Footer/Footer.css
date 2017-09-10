@@ -9,3 +9,13 @@
   padding: 10px;
   color: #fff;
 }
+
+.foot-text {
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .foot-text {
+    font-size: 11px;
+  }
+}
