@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 // import store from './state'
 
 import TransparentNavbar from './components/TransparentNavbar'
+import Footer from './components/Footer'
 import Test from './pages/Test'
 import Hello from './pages/Hello'
 import Info from './pages/Info'
@@ -25,6 +26,7 @@ const App = () => (
         </Switch>
       </Router>
     {/* </Provider> */}
+    <Footer />
   </div>
 )
 

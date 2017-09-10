@@ -99,13 +99,13 @@ const tavolilore = [
     invitati: ["Patrizia", "Oscar", "Piera", "Maria Teresa", "Giancarlo", "Davide", "Simona"],
   },
   { nome : "Tavolo 5",
-    invitati: ["Marco", "Sefy", "Miriam" , "Maura", "Giampiero", "Tipa Gianpiero", "Giacomo", "Tipa Giacomo"],
+    invitati: ["Marco", "Sefy", "Miriam" , "Maura", "Giampiero", "Silvana","Laura" , "Mondo", ],
   },
   { nome : "Tavolo 6",
-    invitati: ["Giusi", "Antonio", "Mario", "Virginia", "Gigi", "Sabina", "Martina", "Filippo", "Giulia"],
+    invitati: ["Giusi", "Antonio", "Mario", "Virginia", "Gigi", "Sabina", "Martina", "Filippo", "Giulia","Giacomo", "Erika"],
   },
   { nome : "Tavolo 7",
-    invitati: ["Gilly", "Poli", "Cinda", "Gianni", "Piera", "Antonietta", "Zia Emilia", "Zia Angiolina", "Salvatore", "Lucia", "Laura" , "Mondo"],
+    invitati: ["Gilly", "Poli", "Cinda", "Gianni", "Piera", "Antonietta", "Zia Emilia", "Zia Angiolina", "Salvatore", "Lucia", ],
   },
   { nome : "Tavolo 8",
     invitati: ["Papa Silvia", "Neili", "Luca", "Tipa Luca", "Simone",],
@@ -120,7 +120,7 @@ const tavolivale = [
     invitati: ["Zia Nora", "Zio Mauro", "Marco", "Zio Gino", "Zia Nora", "Zia Anna", "Silvana"],
   },
   { nome : "Tavolo 11",
-    invitati: ["Carmen", "Ginetto", "Luisa", "Antonello", "Giuliana", "Piero", "Manu", "Davide",],
+    invitati: ["Carmen", "Ginetto", "Luisa", "Antonello", "Giuliana", "Piero", "Manu", "Davide", "Silvia", "Tipa Silvia"],
   },
   { nome : "Tavolo 12",
     invitati: ["Mirella", "Roberto", "Renato", "Katia", "Arianna", "Marta", "Gianbattista", "Anita", "Angelica"],
@@ -132,7 +132,7 @@ const tavoliamici = [
     invitati: ["Erica", "Oscar", "Federico", "Sheila", "Peter", "Monica", "Danila", "Davide", "Dylan"],
   },
   { nome : "Tavolo 14",
-    invitati: [ "Forla", "Nicola" , "Patty", "Ale", "Skizzo", "Sara", "Bocia", "Elisa", "Stena", "Giovanni"],
+    invitati: [ "Forla", "Nicola" , "Patty", "Ale", "Laura", "Skizzo", "Sara", "Elisa", "Stena", "Giovanni"],
   },
   { nome : "Tavolo 15",
     invitati: [ "Togni", "Tipa Togni", "Dema",  "Riky", "Tritto", "Denni", "Mauri", "Fede" ],
@@ -141,9 +141,15 @@ const tavoliamici = [
     invitati: [ "Giuse", "Paola", "Diego", "Silvia", "Willy", "Francy"],
   },
   { nome : "Tavolo 17",
-    invitati: [ "Simona", "Gianluca", "Paolina", "Dani", "Luca", "Tipa Luca", "Katia", "Tipo Katia", "bimba katia"],
+    invitati: [ "Simona", "Gianluca", "Paolina", "Dani", "Luca", "Tipa Luca", "Katia", "bimba katia"],
   },
 
+]
+
+const serali = [
+  { nome : "Solo Sera",
+    invitati: ["Bonetti", "Jonny", "Gufo", "Polmo", "Costa", "Laura", ],
+  },
 ]
 
 
@@ -190,7 +196,9 @@ class TablesList extends PureComponent {
 
 const Tables =  () => (
   <div className="Tables">
-    <span style={{fontSize: 20,color: 'grey', textDecoration: 'underline'}}>TOTALE TAVOLI: <b style={{color: '#222'}}>{(tavolilore.length) + (tavolivale.length) + (tavoliamici.length)}</b></span>
+    <span style={{fontSize: 20,color: 'grey', textDecoration: 'underline'}}>
+      TOTALE TAVOLI: <b style={{color: '#222'}}>{(tavolilore.length) + (tavolivale.length) + (tavoliamici.length)}</b>
+    </span>
     <p>Tavoli da <b>8, 9, 10</b> coperti <br /><b>4</b> tavoli da 12</p>
     <h2>Parenti Lore</h2>
     <TablesList list={tavolilore} />
