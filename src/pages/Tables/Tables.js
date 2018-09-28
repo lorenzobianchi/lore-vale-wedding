@@ -3,87 +3,6 @@ import { Card, Alert } from 'reactstrap'
 import Toggle from 'react-toggle'
 import './Tables.css'
 
-const tavoli =  [
-    { nome : "Tavolo 1",
-      invitati: ["Nonna Anita", "Nonno Emilio", "Zia Giovanna", "Maurizio", "Silvana", "Angela", "Claudio", "Marco", "Stefania"],
-      img : "immagini/vinyl.png"
-    },
-
-    { nome : "Tavolo 2",
-      invitati: ["Maria", "Giulia", "Andrea", "Antonio", "Anna", "Aurora", "Vito", "Aline", "Guillermo"],
-      img : "immagini/quercia.jpg"
-    },
-
-    { nome : "Betulla",
-      invitati: ["Virgilia", "Zia Emilia", "Zia Angiolina", "Maria Teresa", "Giuseppe", "Cinda", "Marinella", "Luigi"],
-      img : "immagini/betulla.jpg"
-    },
-    { nome : "Baobab",
-      invitati: ["Max", "Damiana", "Marco", "Mirko", "Carlandrea", "Fede", "Luca", "Cristina", "Tommaso", "Ricky"],
-      img : "immagini/baobab.jpg"
-    },
-
-    { nome : "Faggio",
-      invitati: ["Valeria", "Matteo", "Oliviero", "Cristina", "Valentina", "Marco", "Dario", "Nicole", "Chiara", "Marco DT"],
-      img : "immagini/faggio.jpg"
-    },
-
-    { nome : "Pioppo",
-      invitati: [ "Mauro D.", "Marco A.",  "Daniela", "Lele", "Gio", "Marco Gufo", "Matteo G.", "Marcello"],
-      img : "immagini/pioppo.jpg"
-    },
-
-    { nome : "Ciliegio",
-      invitati: ["Giusi", "Antonio", "Mario", "Virginia", "Gigi", "Sabina", "Giampiero", "Laura", "Elisio"],
-      img : "immagini/ciliegio.jpg"
-    },
-
-    { nome : "Acero",
-      invitati: ["Marco", "Sefy", "Patrizia", "Oscar", "Piera", "Maria Teresa", "Giancarlo", "Maura"],
-      img : "immagini/acero.jpg"
-    },
-
-    { nome : "Salice",
-      invitati: ["Simona", "Marco", "Miriam", "Davide", "Filippo", "Martina", "Giulia"],
-      img : "immagini/salice.jpg"
-    },
-
-    { nome : "Edera",
-      invitati: ["Monica", "Angelo", "Federica", "Andrea", "Stefania", "Lorenzo", "Gabriele"],
-      img : "immagini/edera.jpg"
-
-    },
-
-    { nome : "Ulivo",
-      invitati: ["Andrea", "Andrea", "Elia" , "Marta", "Adriana", "Sheila", "Luigi", "Clara", "Giusy", "Graziano"],
-      img  : "immagini/ulivo.jpg"
-
-    },
-
-    { nome : "Fico",
-      invitati: ["Luca", "Daniela", "Simone", "Elisa", "Enrico", "Fra", "Antonio", "Roberta", "Letizia", "Marc", "Philippe"],
-      img : "immagini/fico.jpg"
-    },
-
-    { nome : "Alloro",
-      invitati: ["Rachele", "Francesco", "Lorenzo", "Emiliano", "Enrico", "Mauro", "Camilla", "Cristina", "Elena"],
-      img : "immagini/alloro.jpg"
-    },
-
-    { nome : "Mirto",
-      invitati: ["Marianna", "Marco", "Emma", "Jacopo", "Andrea", "Melissa", "Vittoria", "Alex", "Chiara", "Davide"],
-      img : "immagini/mirto.jpg"
-    },
-    {
-      nome:"Eucalipto",
-      invitati : ["Eleonora e Kalidou", "Sara", "Mauro", "Cristina", "Paola", "Dave", "Elisa", "Katia", "Clara e Rocco", "Valeria"],
-      img : "immagini/eucalipto.jpg"
-    },
-    { nome : "Ciliegio",
-      invitati: ["Giusi", "Antonio", "Mario", "Virginia", "Gigi", "Sabina", "Giampiero", ],
-      img : "immagini/ciliegio.jpg"
-    },
-]
 
 const tavolilore = [
   { nome : "Tavolo 1",
@@ -105,10 +24,10 @@ const tavolilore = [
     invitati: ["Giusi", "Antonio", "Mario", "Virginia", "Gigi", "Sabina", "Martina", "Filippo", "Giulia","Giacomo", "Erika"],
   },
   { nome : "Tavolo 7",
-    invitati: ["Gilly", "Poli", "Cinda", "Gianni", "Piera", "Antonietta", "Zia Emilia", "Zia Angiolina", "Salvatore", "Lucia", ],
+    invitati: ["Gilly", "Poli", "Cinda", "Gianni", "Piera", "Zia Emilia", "Zia Angiolina", "Salvatore", "Lucia", ],
   },
   { nome : "Tavolo 8",
-    invitati: ["Papa Silvia", "Neili", "Luca", "Tipa Luca", "Simone",],
+    invitati: ["Papa Silvia", "Neili", "Luca", "Simone",],
   },
 ]
 
@@ -129,28 +48,29 @@ const tavolivale = [
 
 const tavoliamici = [
   { nome : "Tavolo 13",
-    invitati: ["Erica", "Oscar", "Federico", "Sheila", "Peter", "Monica", "Danila", "Davide", "Dylan"],
+    invitati: ["Erica", "Oscar", "Federico", "Sheila", "Peter", "Monica", "Danila", "Davide", "Dylan",  "Diego", "Silvia"],
   },
   { nome : "Tavolo 14",
-    invitati: [ "Forla", "Nicola" , "Patty", "Ale", "Laura", "Skizzo", "Sara", "Elisa", "Stena", "Giovanni"],
+    invitati: [ "Forla", "Nicola" , "Patty", "Ale", "Laura", "Skizzo", "Sara", "Giovanni", "Giuse", "Paola", "Willy", "Francy"],
   },
   { nome : "Tavolo 15",
-    invitati: [ "Togni", "Tipa Togni", "Dema",  "Riky", "Tritto", "Denni", "Mauri", "Fede" ],
+    invitati: [ "Togni", "Dema",  "Riky", "Tritto", "Denni", "Mauri", "Fede" ],
   },
+  // { nome : "Tavolo 16",
+  //   invitati: [ "Giuse", "Paola", "Willy", "Francy", "Diego", "Silvia"],
+  // },
   { nome : "Tavolo 16",
-    invitati: [ "Giuse", "Paola", "Diego", "Silvia", "Willy", "Francy"],
-  },
-  { nome : "Tavolo 17",
-    invitati: [ "Simona", "Gianluca", "Paolina", "Dani", "Luca", "Tipa Luca", "Katia", "bimba katia"],
+    invitati: [ "Simona", "Gianluca", "Paolina", "Dani", "Luca", "Tipa Luca", "Katia", "Lucrezia"],
   },
 
 ]
 
 const serali = [
   { nome : "Solo Sera",
-    invitati: ["Bonetti", "Jonny", "Gufo", "Polmo", "Costa", "Laura", ],
+    invitati: ["Bonetti", "Jonny", "Gufo", "Polmo", "Costa", "Laura", "Gatti", "Cata" ],
   },
 ]
+
 
 
 class TablesList extends PureComponent {
